@@ -1,0 +1,9 @@
+<?php
+$koneksi= mysqlI_connect("localhost","root","");
+$db=mysqlI_select_db($koneksi,"toko");
+if($db){
+    echo "koneksi berhasil :)"."<br>";
+}else{
+    echo "koneksi tidak berhasil :)"."<br>";
+}
+?>
